@@ -1,0 +1,41 @@
+/* APPLY PAGE RESETS */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* STYLING */
+body {
+    background-color: #FFF2E2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/********************/
+/* REUSABLE CLASSES */
+/********************/
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.game-container {
+    display: flex;
+    width: 120rem;
+    height: 96rem;
+    background-color: crimson;
+    border-radius: 1.6rem;
+    
+}
