@@ -12,13 +12,15 @@ html {
 
 /* STYLING */
 body {
+    font-family: "VT323";
     background-color: #FFF2E2;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-
+    overflow-y: hidden;
+     
 }
 
 /********************/
@@ -29,13 +31,120 @@ body {
     max-width: 140rem;
     margin: 0 auto;
     padding: 0 3.2rem;
+    min-width: 100%;
 }
+
+.btn {
+    border-radius: 50%;
+    height: 9rem;
+    width: 9rem;
+}
+
+/********************/
+/* GAME CONTAINER   */
+/********************/
 
 .game-container {
     display: flex;
-    width: 120rem;
-    height: 96rem;
+    min-width: 96rem;
+    max-height: 96rem;
     background-color: crimson;
     border-radius: 1.6rem;
+    flex-direction: column;
+}
+
+/********************/
+/* GAME HEADER      */
+/********************/
+
+.game-header {
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.game-desc {
+    font-family: Verdana;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.game-title {
+    font-size: 6.4rem
+}
+
+/********************/
+/* SKETCH SPACE     */
+/********************/
+
+.game-sketch {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70rem;
+    height: 50rem;
+    background-color: lightgrey;
+    margin: 0 auto;
+    border-radius: 1.6rem;
+    overflow: hidden;
+}
+
+/********************/
+/* GAME FOOTER      */
+/********************/
+
+.game-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 3.2rem;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.slider-label {
+    font-size: 2.4rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 20rem;
+    height: 1.6rem;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+  }
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+/********************/
+/* GAME SKETCH      */
+/********************/
+
+.pixel {
     
 }
+
+.pixel-hover {
+    background-color: black;
+}
+
