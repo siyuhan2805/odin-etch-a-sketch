@@ -38,6 +38,14 @@ body {
     border-radius: 50%;
     height: 9rem;
     width: 9rem;
+    font-family: "VT323";
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #FFD700;
+    
 }
 
 /********************/
@@ -49,8 +57,10 @@ body {
     min-width: 96rem;
     max-height: 96rem;
     background-color: crimson;
-    border-radius: 1.6rem;
+    border-top-left-radius:  1.6rem;
+    border-top-right-radius: 1.6rem;
     flex-direction: column;
+    position: relative;
 }
 
 /********************/
@@ -69,10 +79,12 @@ body {
     font-family: Verdana;
     font-size: 1.6rem;
     font-weight: bold;
+    color: #FFD700;
 }
 
 .game-title {
-    font-size: 6.4rem
+    font-size: 6.4rem;
+    color: #FFD700;
 }
 
 /********************/
@@ -109,6 +121,7 @@ body {
 
 .slider-label {
     font-size: 2.4rem;
+    color: #FFD700;
 }
 
 .slider {
@@ -117,7 +130,7 @@ body {
     height: 1.6rem;
     background: #d3d3d3;
     outline: none;
-    opacity: 0.7;
+    opacity: 0.8;
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
@@ -132,7 +145,7 @@ body {
     appearance: none;
     width: 2.4rem;
     height: 2.4rem;
-    background: #04AA6D;
+    background: #FFD700;
     cursor: pointer;
 }
 
@@ -140,11 +153,98 @@ body {
 /* GAME SKETCH      */
 /********************/
 
-.pixel {
-    
-}
 
 .pixel-hover {
     background-color: black;
 }
 
+/********************/
+/* GAME COLOURS     */
+/********************/
+
+.game-colours {
+    position: absolute;
+    bottom: -56px;
+    z-index: -1;
+    min-width: 960px;
+    background-color: yellow;
+    padding: 1.6rem;
+    display: none;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    gap: 1.6rem;
+    align-items: center;
+    
+    
+}
+
+@keyframes settingsSlideDown {
+    0% {
+        opacity: 1;
+        transform: translateY(-56px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes settingsSlideUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(-56px);
+    }
+    
+}
+
+.clr-title {
+    font-size: 2.4rem;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.clr-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.clr-btn:hover {
+    opacity: 1;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-green {
+    background-color: green;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-yellow {
+    background-color: yellow;
+}
+
+.btn-purple {
+    background-color: purple;
+}
+
+.btn-black {
+    background-color: black;
+    opacity: 1;
+}
